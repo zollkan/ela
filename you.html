@@ -30,16 +30,36 @@
             max-width: 600px;
             margin: 0 auto;
         }
+
+        .center-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        .center-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
     </style>
     <script>
-        // Código JavaScript para tocar a música de fundo
-        window.onload = function() {
-            var audio = new Audio('background_music.mp3'); // Substitua pelo caminho da sua música
-            audio.loop = true;
-            audio.play();
+        var audio = new Audio('background_music.mp3'); // Substitua pelo caminho da sua música
+        var isPlaying = false;
 
-
-        };
+        function toggleAudio() {
+            if (isPlaying) {
+                audio.pause();
+            } else {
+                audio.play();
+            }
+            isPlaying = !isPlaying;
+        }
     </script>
 </head>
 <body>
@@ -48,6 +68,7 @@
         <p>
             Este é um exemplo de outra tela no projeto. Aqui você pode adicionar o conteúdo que desejar.
         </p>
+        <button class="center-button" onclick="toggleAudio()">Toggle Música</button>
     </div>
 </body>
 </html>
