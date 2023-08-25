@@ -48,6 +48,11 @@
             background-color: #2980b9;
             transform: scale(1.05);
         }
+
+        .music-caption {
+            margin-top: 10px;
+            color: #888;
+        }
     </style>
     <script>
         var audio = new Audio('background_music.mp3'); // Substitua pelo caminho da sua música
@@ -69,7 +74,8 @@
         <p>
             Este é um exemplo de outra tela no projeto. Aqui você pode adicionar o conteúdo que desejar.
         </p>
-        <button class="center-button" onclick="toggleAudio()">Minha cura</button>
+        <button class="center-button" onclick="toggleAudio()">Toggle Música</button>
+        <p class="music-caption">Clique no botão para controlar a música de fundo.</p>
     </div>
 </body>
 </html>
