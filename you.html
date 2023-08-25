@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Outra Tela do Projeto</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        
+        #content {
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+    <script>
+        // Código JavaScript para tocar a música de fundo
+        window.onload = function() {
+            var audio = new Audio('background_music.mp3'); // Substitua pelo caminho da sua música
+            audio.loop = true;
+            audio.play();
+        };
+    </script>
+</head>
+<body>
+    <div id="content">
+        <h1>Bem-vindo à Outra Tela</h1>
+        <p>
+            Este é um exemplo de outra tela no projeto. Aqui você pode adicionar o conteúdo que desejar.
+        </p>
+    </div>
+</body>
+</html>
