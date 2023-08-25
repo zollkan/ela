@@ -1,57 +1,46 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <title>Meu Site com Imagem de Fundo e Música</title>
+    <title>Meu Site com Botão no Centro</title>
     <style>
-        /* Seus estilos CSS atuais */
         body {
             font-family: 'Helvetica', sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('background.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
         }
-        
-        /* ... (seus outros estilos) ... */
         
         #content {
-            /* ... (seus estilos para #content) ... */
+            text-align: center;
         }
         
-        /* ... (seus estilos adicionais) ... */
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
         
-        /* Estilos para o botão animado */
-        .animated-button {
+        .center-button {
             display: inline-block;
             padding: 10px 20px;
             background-color: #3498db;
             color: white;
             font-size: 1.2em;
             border-radius: 5px;
-            margin-top: 20px;
             text-decoration: none;
-            transition: background-color 0.3s ease-in-out;
         }
 
-        .animated-button:hover {
+        .center-button:hover {
             background-color: #2980b9;
         }
     </style>
 </head>
 <body>
     <div id="content">
-        <h1>Meu Site com Imagem de Fundo e Música</h1>
-        <p>Este é um site de exemplo com uma imagem de fundo e música tocando.</p>
-        
-        <!-- Botão para a outra tela -->
-        <a href="outra-tela.html" class="animated-button">Ir para Outra Tela</a>
+        <h1>Meu Site Simples</h1>
+        <a href="outra-tela.html" class="center-button">Ir para Outra Tela</a>
     </div>
-    
-    <audio controls autoplay loop>
-        <source src="musica.mp3" type="audio/mpeg">
-        Seu navegador não suporta a reprodução de áudio.
-    </audio>
 </body>
 </html>
